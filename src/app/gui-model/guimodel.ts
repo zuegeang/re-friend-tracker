@@ -364,6 +364,16 @@ export class GuiModel {
                                 "form": "ActivityForm"
                             }
                         },
+                        {
+                            "type": "list",
+                            "icon": "fa-calendar",
+                            "color": "pink",
+                            "search": true,
+                            "url": "/activity",
+                            "form": {
+                                "form": "ActivityForm"
+                            }
+                        },
                     ]
                 },
             ]
