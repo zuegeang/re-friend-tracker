@@ -50,7 +50,7 @@ export class GuiModel {
                     ]
                    },
                 {
-                    "id": "FriendForm",
+                    "id": "FriendsForm",
                     "title": "Friend",
                     "url": "/friend",
                     "formFieldList": [
@@ -306,7 +306,7 @@ export class GuiModel {
                             "icon": "fa-user",
                             "color": "green",
                             "form": {
-                                "form": "FriendForm"
+                                "form": "FriendsForm"
                             }
                         },
                         {
@@ -315,7 +315,7 @@ export class GuiModel {
                             "color": "blue",
                             "search": true,
                             "url": "/friend",
-                            "form": {"form": "FriendForm"
+                            "form": {"form": "FriendsForm"
                         }
                     },
                     ]
