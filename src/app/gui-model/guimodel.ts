@@ -21,6 +21,21 @@ export class GuiModel {
                     "required": true
                     },
                     {
+                        "id": "creationDate",
+                        "type": "date",
+                        "name": "CreationDate",
+                        "width": 2,
+                        "required": true
+                     },
+                     {
+                        "id": "comment",
+                        "type": "text",
+                        "name": "Comments",
+                        "width": 2,
+                        "height": 4,
+                        "maxLength": 5000,
+                    },
+                    {
                     "type": "deleteButton",
                     "name": "Delete"
                     },
@@ -115,6 +130,54 @@ export class GuiModel {
                             "name": "LocationName",
                             "width": 2,
                             "required": true
+                        },
+                        {
+                            "id": "comment",
+                            "type": "text",
+                            "name": "Comments",
+                            "width": 2,
+                            "height": 4,
+                            "maxLength": 5000,
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
+                {
+                    "id": "ActivityForm",
+                    "title": "Activity",
+                    "url": "/activity",
+                    "formFieldList": [
+                        {
+                            "id": "name",
+                            "type": "text",
+                            "name": "Activity",
+                            "width": 2,
+                            "required": true
+                        },
+                        {
+                            "id": "date",
+                            "type": "date",
+                            "name": "Date",
+                            "width": 2
+                        },
+                        {
+                            "id": "comment",
+                            "type": "text",
+                            "name": "Comments",
+                            "width": 2,
+                            "height": 4,
+                            "maxLength": 5000,
                         },
                         {
                             "type": "deleteButton",
@@ -214,6 +277,13 @@ export class GuiModel {
                             "color": "wisteria",
                             "page": "groupspage",
                         },
+                        {
+                            "type": "button",
+                            "name": "Activity",
+                            "icon": "fa-calendar",
+                            "color": "pink",
+                            "page": "activitypage",
+                        },
                     ]
                 },
                 {
@@ -268,23 +338,25 @@ export class GuiModel {
                             "form": {
                                 "form": "LocationForm"
                             }
-                        }, {
-                            "id": "groupspage",
-                            "elementList": [
-                                {
-                                    "type": "backbutton",
-                                },
-                                {
-                                    "type": "newButton",
-                                    "name": "NewGroup",
-                                    "icon": "fa-weixin",
-                                    "color": "green",
-                                    "form": {
-                                        "form": "GroupForm"
-                                    }
-                                }
-                            ]
-                        }
+                        },
+                    ]
+                },
+                {
+                    "id": "activitypage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "NewActivity",
+                            "icon": "fa-calendar",
+                            "color": "pink",
+                            "width": 2,
+                            "form": {
+                                "form": "ActivityForm"
+                            }
+                        },
                     ]
                 },
             ]
