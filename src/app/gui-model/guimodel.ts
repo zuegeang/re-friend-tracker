@@ -172,6 +172,14 @@ export class GuiModel {
                             "width": 2
                         },
                         {
+                            "id": "location",
+                            "type": "autocomplete",
+                            "name": "Location",
+                            "url": "/location",
+                            "form": "LocationForm",
+                            "width": 2
+                        },
+                        {
                             "id": "comment",
                             "type": "text",
                             "name": "Comments",
@@ -292,7 +300,7 @@ export class GuiModel {
                         {
                             "type": "backbutton",
                         },
-                        {
+                         {
                             "type": "newButton",
                             "name": "NewFriend",
                             "icon": "fa-user",
@@ -307,10 +315,9 @@ export class GuiModel {
                             "color": "blue",
                             "search": true,
                             "url": "/friend",
-                            "form": {
-                                "form": "FriendForm"
-                            }
-                        },
+                            "form": {"form": "FriendsForm"
+                        }
+                    },
                     ]
                 },
                 {
