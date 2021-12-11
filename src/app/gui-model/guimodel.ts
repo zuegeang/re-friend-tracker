@@ -315,7 +315,7 @@ export class GuiModel {
                             "color": "blue",
                             "search": true,
                             "url": "/friend",
-                            "form": {"form": "FriendsForm"
+                            "form": {"form": "FriendForm"
                         }
                     },
                     ]
