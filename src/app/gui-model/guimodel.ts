@@ -315,8 +315,7 @@ export class GuiModel {
                             "color": "blue",
                             "search": true,
                             "url": "/friend",
-                            "form": {"form": "FriendsForm"
-                        }
+                            "page": "friendpage",
                     },
                     ]
                 },
@@ -374,6 +373,30 @@ export class GuiModel {
                                 "form": "ActivityForm"
                             }
                         },
+                    ]
+                },
+                {
+                    "id": "friendpage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                         {
+                            "type": "button",
+                            "name": "EditFriend",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "form": {
+                                "form": "FriendsForm"
+                            }
+                        },
+                        {
+                            "type": "button",
+                            "name": "Activity",
+                            "icon": "fa-calendar",
+                            "color": "blue",
+                            "form": {"form": "AddActivityForm"},
+                    },
                     ]
                 },
             ]
